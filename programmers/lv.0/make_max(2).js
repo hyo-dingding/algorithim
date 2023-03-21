@@ -25,7 +25,7 @@
 // 입출력 예 #3
 // 두 수의 곱중 최댓값은 20 * 30 = 600 입니다.
 
-// [1]
+// [1] 나의 풀이
 function solution(numbers) {
     let answer = [];
     for (let i = 0; i < numbers.length; i++) {
@@ -42,10 +42,9 @@ solution([10, 20, 30, 5, 5, 20, 5]); //600
 
 // 2중 for문으로 겨우 풀었던 문제..
 
-// [2]
+// [2] 다른 사람의 풀이 적용
 function solution(numbers) {
-    let a = numbers.sort((a, b) => a - b);
-    console.log(a);
+    numbers.sort((a, b) => a - b);
     return Math.max(numbers[0] * numbers[1], numbers[numbers.length - 1] * numbers[numbers.length - 2]);
 }
 
